@@ -10,7 +10,7 @@ const tail = function (arr) {
   if (Array.isArray(arr) && arr.length > 1) {
     return arr.slice(1);
   } else {
-    console.log("please pass an array and array length > 1");
+    return [];
   }
 };
 
