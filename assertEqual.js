@@ -3,6 +3,7 @@ const assertEqual = function(actual, expected) {
 
   console.assert(actual === expected);
 };
+
 const lighthouse = 'LighthouseLabse';
 const bc = 'Bootcamp';
 

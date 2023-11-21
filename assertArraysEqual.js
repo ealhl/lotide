@@ -1,9 +1,10 @@
+/* eslint-disable func-style */
 function eqArrays(arr, arr2) {
   if (arr.length !== arr2.length) {
     return false;
   }
 
-  for (var i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] !== arr2[i]) {
       return false;
     }

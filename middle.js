@@ -1,3 +1,4 @@
+/* eslint-disable func-style */
 function middle(arr) {
   let middle = [];
   let length = arr.length;
@@ -5,10 +6,10 @@ function middle(arr) {
     return middle;
   }
   if (length % 2 === 0) {
-    middle.push(arr[length / 2 - 1]);
-    middle.push(arr[length / 2]);
+    middle.push(Math.floor(arr[length / 2 - 1]));
+    middle.push(Math.floor(arr[length / 2]));
   } else {
-    middle.push(arr[(length - 1) / 2]);
+    middle.push(Math.floor(arr[(length - 1) / 2]));
   }
   return middle;
 }
