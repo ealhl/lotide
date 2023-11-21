@@ -1,4 +1,3 @@
-/* eslint-disable func-style */
 const letterPositions = function (sentence) {
   const results = {};
   // logic to update results here
