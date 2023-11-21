@@ -1,3 +1,4 @@
+/* eslint-disable func-style */
 const assertEqual = function (actual, expected) {
   console.assert(actual === expected);
 };
