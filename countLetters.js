@@ -1,7 +1,7 @@
 /* eslint-disable func-style */
 function countLetters(letters) {
   const result = {};
-  let lettersTrimLow = letters.toLowerCase().split(" ").join("");
+  let lettersTrimLow = letters.split(" ").join("");
 
   for (const letter of lettersTrimLow) {
     if (result[letter]) {
