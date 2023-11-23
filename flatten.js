@@ -1,5 +1,5 @@
 /* eslint-disable func-style */
-function flatten(bigBagArr) {
+const flatten = function (bigBagArr) {
   let candyArr = [];
   for (let i = 0; i < bigBagArr.length; i++) {
     if (Array.isArray(bigBagArr[i])) {
@@ -11,9 +11,9 @@ function flatten(bigBagArr) {
     }
   }
   return candyArr;
-}
+};
 
-function assertArraysEqual(checkarr, checkArr2) {
+const assertArraysEqual = function (checkarr, checkArr2) {
   if (eqArrays(checkarr, checkArr2)) {
     console.log(
       "Passed, You take out all of the candy and get it into one single bag,"
@@ -21,9 +21,9 @@ function assertArraysEqual(checkarr, checkArr2) {
   } else {
     console.log("Failed, You have not take out all of the candy and get it into one single bag");
   }
-}
+};
 
-function eqArrays(arr, arr2) {
+const eqArrays = function (arr, arr2) {
   if (arr.length !== arr2.length) {
     return false;
   }
@@ -34,7 +34,7 @@ function eqArrays(arr, arr2) {
     }
   }
   return true;
-}
+};
 
 const arr3 = [1, 2, [3, 4], 5, [6, 1]];
 const arr4 = [1, 2, 3, 4, 5, 6, 1];

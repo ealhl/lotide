@@ -1,5 +1,5 @@
 /* eslint-disable func-style */
-function middle(arr) {
+const middle = function (arr) {
   let middle = [];
   let length = arr.length;
   if (length <= 2) {
@@ -12,9 +12,9 @@ function middle(arr) {
     middle.push(Math.floor(arr[(length - 1) / 2]));
   }
   return middle;
-}
+};
 
-function eqArrays(arr, arr2) {
+const eqArrays = function (arr, arr2) {
   if (arr.length !== arr2.length) {
     return false;
   }
@@ -25,15 +25,16 @@ function eqArrays(arr, arr2) {
     }
   }
   return true;
-}
+};
 
-function assertArraysEqual(checkarr, checkArr2) {
+const assertArraysEqual = function (checkarr, checkArr2) {
   if (eqArrays(checkarr, checkArr2)) {
     console.log("Passed, middle value array has return");
   } else {
     console.log("Failed, middle array value is not correct");
   }
-}
+};
+
 console.log(middle([1]));
 console.log(middle([1, 2]));
 console.log(middle([1, 2, 3]));

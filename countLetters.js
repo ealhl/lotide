@@ -1,5 +1,5 @@
 /* eslint-disable func-style */
-function countLetters(letters) {
+const countLetters = function (letters) {
   const result = {};
   let lettersTrimLow = letters.split(" ").join("");
 
@@ -12,7 +12,7 @@ function countLetters(letters) {
   }
 
   return result;
-}
+};
 
 const count = countLetters("lighthouse in the house");
 console.log(count);

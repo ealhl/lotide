@@ -17,7 +17,7 @@ const letterPositions = function (sentence) {
   return results;
 };
 
-function eqArrays(arr, arr2) {
+const eqArrays = function (arr, arr2) {
   if (arr.length !== arr2.length) {
     return false;
   }
@@ -29,15 +29,15 @@ function eqArrays(arr, arr2) {
     }
   }
   return true;
-}
+};
 
-function assertArraysEqual(checkarr, checkArr2) {
+const assertArraysEqual = function (checkarr, checkArr2) {
   if (eqArrays(checkarr, checkArr2)) {
     console.log("pass");
   } else {
     console.log("fail");
   }
-}
+};
 
 console.log(letterPositions("lighthouse in the house"));
 
