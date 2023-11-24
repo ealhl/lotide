@@ -1,4 +1,4 @@
-/* eslint-disable func-style */
+
 const assertEqual = function (actual, expected) {
   console.assert(actual === expected);
 };
@@ -8,8 +8,7 @@ const eqArrays = function (arr, arr2) {
     return false;
   }
 
-  // eslint-disable-next-line no-var
-  for (var i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] !== arr2[i]) {
       return false;
     }
