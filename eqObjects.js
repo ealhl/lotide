@@ -22,8 +22,7 @@ const eqObjects = function (object1, object2) {
     for (let key in object1) {
       //check if key is array
       if (Array.isArray(object1[key])) {
-        console.log("is Arr");
-        if (!eqArrays(object1[key].sort(), object2[key].sort())) {
+        if (!eqArrays(object1[key], object2[key])) {
           return false;
         }
       } else {
