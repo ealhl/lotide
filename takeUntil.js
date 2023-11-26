@@ -19,20 +19,34 @@ const assertArraysEqual = function (checkarr, checkArr2) {
   );
 };
 
+//using .some function to loop through array
 const takeUntil = function (array, callback) {
   const results = [];
-  for (let item of array) {
-    if (!callback(item)) {
-      results.push(item);
+  array.some((x) => {
+    if (!callback(x)) {
+      results.push(x);
     } else {
       return results;
     }
-  }
+  });
   return results;
 };
+
+//using for loop to loop through array
+// const takeUntil = function (array, callback) {
+//   const results = [];
+//   for (let item of array) {
+//     if (!callback(item)) {
+//       results.push(item);
+//     } else {
+//       return results;
+//     }
+//   }
+//   return results;
+// };
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, (x) => x < 0);
-console.log(results1);
+console.log(results1.length);
 
 console.log("---");
 
