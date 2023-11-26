@@ -12,11 +12,7 @@ const eqArrays = function (arr, arr2) {
 };
 
 const assertArraysEqual = function (checkarr, checkArr2) {
-  if (eqArrays(checkarr, checkArr2)) {
-    console.log("Two arrays are equal");
-  } else {
-    console.log("Two arrays are not equal");
-  }
+  console.log(`Two arrays are ${eqArrays(checkarr, checkArr2) ? 'equal' : 'not equal'}: ${checkarr} and ${checkArr2}`);
 };
 
 const words = ["ground", "control", "to", "major", "tom"];
