@@ -34,7 +34,7 @@ const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect; // <= add this line
   // console.log(`Example actual: ${inspect(actual)}`);
   // console.log(`Example expected: ${inspect(expected)}`);
-  console.log(`Two objects are ${eqObjects(inspect(actual), inspect(actual)) ? 'equal' : 'not equal'}:`, inspect(actual), `and `,inspect(expected));
+  console.log(`Two objects are ${eqObjects(actual, expected) ? 'equal' : 'not equal'}:`, inspect(actual), `and `,inspect(expected));
 
 
 };
