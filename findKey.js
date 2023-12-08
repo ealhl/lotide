@@ -99,3 +99,5 @@ assertEqual(
   ),
   "Blue Hill"
 );
+
+module.exports = findKey;

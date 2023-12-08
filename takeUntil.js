@@ -75,3 +75,5 @@ assertArraysEqual(
   takeUntil([], (x) => x === ","),
   []
 );
+
+module.exports = takeUntil;

@@ -1,3 +1,4 @@
+const assertEqual = require('./assertEqual');
 /* eslint-disable func-style */
 const countLetters = function (letters) {
   const result = {};
@@ -17,12 +18,10 @@ const countLetters = function (letters) {
 const count = countLetters("lighthouse in the house");
 console.log(count);
 
-const assertEqual = function (actual, expected) {
-  console.assert(actual === expected);
-};
-
 assertEqual(count["i"], 2);
 assertEqual(count["l"], 1);
 assertEqual(count["g"], 1);
 assertEqual(count["h"], 4);
 assertEqual(count["o"], 2);
+
+module.exports = countLetters;

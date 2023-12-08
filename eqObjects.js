@@ -1,23 +1,5 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-const eqArrays = function (arr, arr2) {
-  if (arr.length !== arr2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require("./eqArrays");
+const assertEqual = require("./assertEqual");
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
@@ -52,3 +34,5 @@ const longSleeveShirtObject = {
 
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
 assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
+
+module.exports = eqObjects;
